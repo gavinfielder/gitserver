@@ -1,3 +1,5 @@
+This repo is not provided for cloning and production use. The files in this repo are the files that I modified from default configurations to produce the end product. This page is a specification for 'gitserver', which I submitted as the 42 project roger-skyline-1.
+
 # Gitserver Specification (ver. 0.1)
 ## Hardware Specification &#x2713;
  - Disk size 8 GB &#x2713;
