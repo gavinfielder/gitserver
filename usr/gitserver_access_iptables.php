@@ -3,7 +3,7 @@
 function update_firewall(array $allowed_addresses)
 {
 	//The ports to open for the whitelisted addresses
-	$service_ports = [ 8080, 44343, 2222 ];
+	$service_ports = [ 8080, 2222 ];
 	//input/output files
 	$iptables_file = "/etc/iptables-rules";
 	$new_iptables = "/tmp/iptables-rules-new";
