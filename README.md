@@ -10,8 +10,10 @@ This repo is not provided for cloning and production use. The files in this repo
 
 ## Network Specification
  - Static IP Address `10.0.2.20\30`  &#x2713;
+ - (VM testing only) 2nd Static IP Address `192.168.99.110/30` &#x2713;
  - `ssh` listens on port 2222. &#x2713;
- - `apache2` listens on port 8080. &#x2713;
+ - `apache2` listens on port 8080 (HTTP). &#x2713;
+ - `apache2` listens on port 44343 (HTTPS). &#x2713;
  - `gitserver-access` listens on port 57348. &#x2713;
  - All other ports are unused. &#x2713;
 
@@ -64,7 +66,8 @@ The web interface allows users to view and open repositories on the server.
  - The document root is `/var/www/html/`. &#x2713;
  - The default document is `/index.php`. &#x2713;
  - apache2 runs as user `git`. &#x2713;
- - .htaccess files prohibit users from accessing anything outside the user interface, required scripts, and CSS.
+ - .htaccess files prohibit users from accessing anything outside the user interface, required scripts, and CSS.  &#x2713;
+ - HTTPS uses self-signed SSL certificate.  &#x2713;
 
 ### Landing Page &#x2713;
 The default page shows a list of repositories on the server, information about the latest commit, and a URL for the remote repo that will be usable once a user is completely configured. &#x2713;
