@@ -1,0 +1,18 @@
+#!/bin/sh
+
+MODIFIED=$(find /etc/crontab -mmin -1440)
+
+if [ $# -gt 0 ] && [ "$1" = "-f" ] ; then
+	MAIL="\nSubject: Gitserver: Crontab was Modified\n\nThis is a notice that /etc/crontab was modified recently.\n\nOutput of \`ls -lt /etc/crontab\`:\n\n$(ls -lt /etc/crontab)\n\nTime of this script: $(date). Forced."
+	echo $MAIL > /tmp/mail.out
+	sendmail root@gitserver < /tmp/mail.out
+	exit 0
+fi
+
+if [ -z $MODIFIED ] ; then
+	true
+else
+	MAIL="\nSubject: Gitserver: Crontab was Modified\n\nThis is a notice that /etc/crontab was modified within the last day.\n\nOutput of \`ls -lt /etc/crontab\`:\n\n$(ls -lt /etc/crontab)\n\nTime of this script: $(date)"
+	echo $MAIL > /tmp/mail.out
+	sendmail root@gitserver < /tmp/mail.out
+fi

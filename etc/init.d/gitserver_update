@@ -1,0 +1,18 @@
+#!/bin/sh
+
+LOG=/var/log/update_script.log
+
+echo "Upgrade Script: " >> $LOG
+date >> $LOG
+echo "Running apt-get update:" >> $LOG
+apt-get update >> $LOG
+echo "Running apt-get upgrade:" >> $LOG
+apt-get upgrade >> $LOG
+echo "Finished." >> $LOG
+echo "" >> $LOG
+
+# Check that the /etc/crontab monitoring is still in place
+CRONTAB_MODIFIED_FAILSAFE=$(cat /etc/crontab | grep check_crontab_modified)
+if [ -z "$CRONTAB_MODIFIED_FAILSAFE" ] ; then
+	/usr/bin/check_crontab_modified -f
+fi

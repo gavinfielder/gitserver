@@ -1,0 +1,8 @@
+#!/bin/sh
+BACKUP_NAME="/bak/gitserver_backup.$(date +%s).tar"
+FILES=$(find /home/git/*)
+if [ -z "$FILES" ] ; then
+	exit 0
+fi
+tar -cf $BACKUP_NAME /home/git/* >/dev/null 2>/dev/null
+rm $(find /bak/gitserver_backup.*.tar -mtime +7) 2>/dev/null || true
