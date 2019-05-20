@@ -1,4 +1,3 @@
-
 # Gitserver Specification (ver. 0.1)
 ## Hardware Specification &#x2713;
  - Disk size 8 GB &#x2713;
