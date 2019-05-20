@@ -1,0 +1,8 @@
+Deny from all
+
+<Files "style.css">
+	Allow from all
+</Files>
+<Files "read_ssh_pubkey.js">
+	Allow from all
+</Files>

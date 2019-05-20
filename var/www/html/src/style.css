@@ -1,0 +1,223 @@
+body {
+    background-color: #F2D6BD;
+    color: #1F2126;
+    font-family: helvetica;
+    font-size: 14px;
+}
+
+h1 {
+    color: #1F2126;
+}
+
+h2 {
+    color: #1F2126;
+}
+
+#header {
+    width: 100%;
+    font-size: 40px;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #58658C;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.26);
+    margin-bottom: 20px;
+    display: block;
+}
+
+#navbar {
+    /*border-top: 3px double black;
+    border-bottom: 3px double black;*/
+    width: 100%;
+    background-color: #BF8360;
+    display: block;
+}
+
+#content {
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#footer {
+    border-top: 3px double #1F2126;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-family: courier;
+    text-align: right;
+    display: block;
+    width: 100%;
+    /*background-color: #EDBB99;*/
+}
+
+.code-block {
+    margin-left: 10px;
+    max-width: 400px;
+    overflow: auto;
+    font-family: courier;
+    white-space: pre;
+    background-color: #E1E1E1;
+}
+
+#ssh-setup-code {
+    display: block;
+}
+
+.navbar-links-container {
+    display: inline-block;
+}
+
+.navbar-button {
+    font-family: helvetica;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    background-color: #F2D6BD;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar-button:hover {
+    background-color: #8C5B49;
+}
+
+.form-submit {
+    font-family: helvetica;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    background-color: #BF8360;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    box-shadow: 2px 2px 5px #C29282;
+}
+
+.file-selector {
+    position: relative;
+    bottom: 10px;
+    max-width: 80px;
+    font-family: helvetica;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: #BF8360;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.file-selector:hover {
+    box-shadow: 2px 2px 5px #C29282;
+}
+
+button:focus
+{
+    outline: 0;
+}
+
+input:focus
+{
+    outline: 0;
+}
+
+textarea:focus
+{
+    outline: 0;
+}
+
+.login-info {
+    position: absolute;
+    right: 20px;;
+    margin: 5px 5px 5px 5px;
+    display: inline-block;
+}
+
+.repo-table {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+td {
+    border-top: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    border-bottom: 1px solid black;
+}
+
+.repo-table-header td {
+    border-top: none;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #58658C;
+    background-color: #F2D6BD;
+}
+
+col.col2 {
+    background-color: #E8C7A9;
+}
+col.col4 {
+    background-color: #E8C7A9;
+}
+col.col6 {
+    background-color: #E8C7A9;
+}
+col.col8 {
+    background-color: #E8C7A9;
+}
+
+.form-label {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.form-input {
+    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+    font-family: helvetica;
+    font-size: 14px;
+autocomplete:
+}
+
+.small-input {
+    min-width: 150px;
+}
+
+.med-input {
+    min-width: 400px;
+}
+
+.ssh-entry {
+    width: 350px;
+    height: 100px;
+}
+
+.ssh-entry-label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.user-message {
+    display: block;
+    font-size: 16px;
+    background-color: #CADED5;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
