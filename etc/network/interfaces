@@ -10,8 +10,14 @@ iface lo inet loopback
 # The primary network interface
 allow-hotplug enp0s3
 iface enp0s3 inet static
-	address 10.0.2.20
+	address 10.0.2.21
 	netmask 255.255.255.252
 	network 10.0.2.0
 	broadcast 10.0.2.255
 	gateway 10.0.2.2
+
+# For the virtualbox host-only network
+allow-hotplug enp0s8
+iface enp0s8 inet static
+	address 192.168.99.110
+	netmask 255.255.255.252
