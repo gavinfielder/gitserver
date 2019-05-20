@@ -32,7 +32,8 @@ See also [Security Specification](#security-specification).
 ## Security Specification  &#x2713;
 - Authorized IP addresses can access only the following ports: &#x2713;
   - 2222 (SSH)
-  - 8080 (Web interface)
+  - 8080 (Web interface HTTP)
+  - 44343 (Web interface HTTPS)
   - 57348 (gitserver-access)
 - Unrecognized IP address can access only the following ports: &#x2713;
   - 57348 (gitserver-access)
