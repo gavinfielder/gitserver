@@ -31,7 +31,9 @@ See also [Security Specification](#security-specification).
 - Every day at 4:30 AM, a script (`/usr/bin/gitserver_backup`) will run to backup all the git repositories on the server, and delete backups that are more than a week old. &#x2713;
 - The services `apache2`, `sendmail`, `cron`, `mariadb`, `ssh`, and `gitserver-access` are all started at boot time. See `/etc/rc*.d`. This is in addition to the necessary system services `getty`, `dbus`, `systemd`, and `rsyslog`. &#x2713;
 
-## Security Specification  &#x2713;
+## Security Specification
+&#x2713;
+
 - Authorized IP addresses can access only the following ports: &#x2713;
   - 2222 (SSH)
   - 8080 (Web interface HTTP)
